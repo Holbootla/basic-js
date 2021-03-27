@@ -1,14 +1,26 @@
 const CustomError = require("../extensions/custom-error");
 
 class VigenereCipheringMachine {
-  encrypt() {
+  encrypt(message, key) {
+    
+    if (message === undefined || key === undefined) {
+      throw new Error
+    }
+
     throw new CustomError('Not implemented');
-    // remove line with error and write your code here
-  }    
-  decrypt() {
+
+  } 
+
+  decrypt(message, key) {
+
+    if (message === undefined || key === undefined) {
+      throw new Error
+    }
+
     throw new CustomError('Not implemented');
-    // remove line with error and write your code here
+    
   }
+
 }
 
 module.exports = VigenereCipheringMachine;
